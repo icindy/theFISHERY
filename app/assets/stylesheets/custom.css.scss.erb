@@ -1,13 +1,14 @@
 footer{
   clear:both !important;
   width:100%;
-  position: fixed;
+  position: absolute;
   height: 35px;
-  padding: 10px;
+  padding: 5px;
   color:#200f08 ;
   background:#1b1f20;
-  margin-top: 45px;
+  margin-top: 10px;
   padding-top: 5px;
+  bottom: 0;
   
   /*Opacity*/
   filter:alpha(opacity=75); /* msie */  
@@ -39,10 +40,12 @@ nav {
   position:fixed;
   z-index:4;
   }
+
 nav div { 
-  width:765px;
+  width:650px;
   margin:0px auto;
   }
+
 nav a.nav-link {
   color:#FFF;
   text-decoration:none;
@@ -71,28 +74,23 @@ nav a.nav-link {
   nav a.blue:hover{color:#00aeef;text-shadow:0px 0px 5px #00aeef;}
   nav a.grey.selected{color:#aaa;border-color:#aaa!important;}
   nav a.grey:hover{color:#aaa;text-shadow:0px 0px 5px #aaa;}
-  
-  nav a.fork-us{float:right;border-radius:4px;background-color:#2b3234;width:104px;height:32px;line-height:32px;margin-top:8px;font-weight:bold;font-size:14px;text-decoration:none;color:#FFF;text-align:center;font-family:'Montserrat',sans-serif;}
-
-  nav a.fork-us:hover{background-color:#434748;}
-  nav a.fork-us:active{background-color:#000;}
 
 
 header { 
   position:relative;
-  top:48px;
-  height:320px;
-  border-bottom:1px solid #b9b9b9;
+  top:45px;
+  height:310px;
+  border-bottom:5px solid #b9b9b9;
   background:url(<%= asset_path 'backdrop.png' %>); 
   background-size:contain;
-  margin-bottom:55px;
+  margin-bottom:60px;
 }
 
 header img { 
   height:225px;
   margin:0px auto;
   display:block;
-  padding:18px 0px;
+  padding:18px 5px;
   }
 
 header #tabs { 
@@ -100,7 +98,6 @@ header #tabs {
   height:32px;
   margin:7px auto;
   text-align:center;
-
   background-image:url(<%= asset_path 'tabs.png' %>); 
   border-radius:5px;
   background-size:100%;
@@ -122,87 +119,6 @@ border-right:1px solid rgba(0,0,0,0);
 border-left:1px solid rgba(0,0,0,0);
 }
 
-#try { 
-  width:730px;
-  height:32px;
-  border-top-right-radius:4px;
-  border-top-left-radius:4px;
-  border:1px solid #CCC;
-  border-bottom-color:#eaf9ff;
-  margin:0px auto;
-  position:relative;
-  background-color:#eaf9ff;
-  text-align:center;
-  top:15px;
-  }
 
-  #try h1 { 
-    font-size:32px;
-    font-weight:bold;
-    color:#000;
-    line-height:70px;
-    text-align:center;
-    }
 
-    .btn-big { 
-      text-align:center;
-      text-decoration:none;
-      width:280px;
-      height:64px;
-      display:block;
-      font-size:30px;
-      margin:20px auto;
-      line-height:64px;
-      border-radius:8px;
-      border:2px solid #16617d;
-      color:#fff;
-      text-shadow:0 1px 0 rgba(0,0,0,0.2);
-      font-weight:bold;
-      background-color:#00aeef;
-      background-image:-webkit-gradient(linear,left top,left bottom,from(#00aeef),to(#009dd8));
-      background-image:-webkit-linear-gradient(top,#00aeef,#009dd8);
-      background-image:-moz-linear-gradient(top,#00aeef,#009dd8);
-      background-image:-o-linear-gradient(top,#00aeef,#009dd8);background-image:linear-gradient(to bottom,#00aeef,#009dd8);
-      -webkit-box-shadow:inset 0 2px 0 rgba(255,255,255,0.33),inset 0 -1px 2px rgba(0,0,0,0.2);-moz-box-shadow:inset 0 2px 0 rgba(255,255,255,0.33),inset 0 -1px 2px rgba(0,0,0,0.2);
-      -khtml-box-shadow:inset 0 2px 0 rgba(255,255,255,0.33),inset 0 -1px 2px rgba(0,0,0,0.2);
-      -o-box-shadow:inset 0 2px 0 rgba(255,255,255,0.33),inset 0 -1px 2px rgba(0,0,0,0.2);
-      box-shadow:inset 0 2px 0 rgba(255,255,255,0.33),inset 0 -1px 2px rgba(0,0,0,0.2);
-      -webkit-text-stroke:0.2px;font-family:'Montserrat',sans-serif;
-    }
-
-    article { 
-      width:730px;
-      margin:0px auto 32px auto;
-      padding-top:30px;
-      }
-
-    article strong,article em,article p,article li { line-height:22px;
-        font-size:16px;
-        }
-        article li { 
-          margin-left:40px;
-          }
-        article section a { color:#77abbf;
-        text-decoration:none;
-        } 
-        article h1,article h1 a { 
-          font-size:32px;
-          margin-top:64px;
-          margin-bottom:5px;
-          color:black!important;
-          text-decoration:none;
-          -webkit-text-stroke:0.2px;
-          font-family:'Montserrat',sans-serif;
-          }
-        article h3 { 
-          font-size:16px;
-          color:#a6aeb3;
-          }
-        article section { 
-        overflow:hidden;
-        width:100%;
-        }
-        .pf { margin:20px auto;}
-        .pf h4{margin:0;padding:10px;background:black;color:white;}
-        .box{border-radius:2px;background-color:#FFF;border:1px solid #B9B9B9;box-shadow:0 1px 5px rgba(0,0,0,0.2);}
-        @-moz-document url-prefix()
+ 

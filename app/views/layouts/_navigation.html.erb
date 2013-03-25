@@ -15,7 +15,7 @@
     <!--<a class="nav-link yellow" href="http://blog.discourse.org">Blog</a>-->
     <%= link_to "Blog", '#', :class => "nav-link blue" %>
 
-    
+     
 
     <!--<a class="nav-link green" href="http://try.discourse.org">Your Collection</a>-->
     <%= link_to "Your Collection", '#', :class => "nav-link blue" %>
@@ -37,7 +37,7 @@
   <% end %>
   <% if user_signed_in? %>
    
-    <%= link_to('Edit account', edit_user_registration_path, :class => "nav-link blue") %>
+    <%= link_to('Edit Account', edit_user_registration_path, :class => "nav-link blue") %>
     
   <% else %>
    
