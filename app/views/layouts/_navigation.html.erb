@@ -1,0 +1,49 @@
+<nav id="bar">
+  <div>
+    <!-- <a class="nav-link selected" href="http://www.discourse.org">
+    <img width="64" height="45" src="../images/nav-icon-gray.png" alt="logo"/>
+    </a> -->
+
+    <%= link_to((image_tag "nav-icon-gray.png", :size => "64x45"), root_path, :class => "nav-link selected") %> 
+
+    <!-- <a class="nav-link red" href="/about/">About</a> --> 
+    <%#= link_to "About", about_path, :class => "nav-link red" %>
+
+    <!-- <a class="nav-link orange" href="/faq/">FAQ</a> -->
+    <%#= link_to "FAQ", '#', :class => "nav-link orange" %>
+
+    <!--<a class="nav-link yellow" href="http://blog.discourse.org">Blog</a>-->
+    <%= link_to "Blog", '#', :class => "nav-link blue" %>
+
+    
+
+    <!--<a class="nav-link green" href="http://try.discourse.org">Your Collection</a>-->
+    <%= link_to "Your Collection", '#', :class => "nav-link blue" %>
+
+    <!--<a class="nav-link blue" href="http://discourse.org/buy">Vault</a>-->
+    <%#= link_to "Vault", '#', :class => "nav-link blue" %>
+
+    <!--<a class="nav-link grey" href="http://meta.discourse.org">Review</a>-->
+    <%#= link_to "Review", '#', :class => "nav-link grey" %>
+
+    <% if user_signed_in? %>
+    
+    <%= link_to('Logout', destroy_user_session_path, :method=>'delete', :class => "nav-link red") %>
+    
+  <% else %>
+   
+    <%= link_to('Login', new_user_session_path, :class => "nav-link blue")  %>
+    
+  <% end %>
+  <% if user_signed_in? %>
+   
+    <%= link_to('Edit account', edit_user_registration_path, :class => "nav-link blue") %>
+    
+  <% else %>
+   
+    <%= link_to('Sign up', new_user_registration_path, :class => "nav-link blue")  %>
+    
+  <% end %>
+
+  </div>
+</nav>
